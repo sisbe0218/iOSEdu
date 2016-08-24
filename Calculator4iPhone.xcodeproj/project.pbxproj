@@ -12,7 +12,7 @@
 		CE3856B91D6D206C00570BB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3856B81D6D206C00570BB2 /* ViewController.m */; };
 		CE3856BC1D6D206C00570BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3856BA1D6D206C00570BB2 /* Main.storyboard */; };
 		CE3856BE1D6D206C00570BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3856BD1D6D206C00570BB2 /* Assets.xcassets */; };
-		CE3856C11D6D206C00570BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3856BF1D6D206C00570BB2 /* LaunchScreen.storyboard */; };
+		CE3856CC1D6D2C2A00570BB2 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3856CB1D6D2C2A00570BB2 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,10 @@
 		CE3856B81D6D206C00570BB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE3856BB1D6D206C00570BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3856BD1D6D206C00570BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE3856C01D6D206C00570BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3856C21D6D206C00570BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3856C81D6D21AD00570BB2 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CE3856CA1D6D2C2A00570BB2 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		CE3856CB1D6D2C2A00570BB2 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		CE3856A51D6D206B00570BB2 = {
 			isa = PBXGroup;
 			children = (
+				CE3856C81D6D21AD00570BB2 /* AddressBook.framework */,
 				CE3856B01D6D206B00570BB2 /* Calculator4iPhone */,
 				CE3856AF1D6D206B00570BB2 /* Products */,
 			);
@@ -62,9 +65,10 @@
 				CE3856B51D6D206C00570BB2 /* AppDelegate.m */,
 				CE3856B71D6D206C00570BB2 /* ViewController.h */,
 				CE3856B81D6D206C00570BB2 /* ViewController.m */,
+				CE3856CA1D6D2C2A00570BB2 /* Calculator.h */,
+				CE3856CB1D6D2C2A00570BB2 /* Calculator.m */,
 				CE3856BA1D6D206C00570BB2 /* Main.storyboard */,
 				CE3856BD1D6D206C00570BB2 /* Assets.xcassets */,
-				CE3856BF1D6D206C00570BB2 /* LaunchScreen.storyboard */,
 				CE3856C21D6D206C00570BB2 /* Info.plist */,
 				CE3856B11D6D206B00570BB2 /* Supporting Files */,
 			);
@@ -136,7 +140,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3856C11D6D206C00570BB2 /* LaunchScreen.storyboard in Resources */,
 				CE3856BE1D6D206C00570BB2 /* Assets.xcassets in Resources */,
 				CE3856BC1D6D206C00570BB2 /* Main.storyboard in Resources */,
 			);
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3856B91D6D206C00570BB2 /* ViewController.m in Sources */,
+				CE3856CC1D6D2C2A00570BB2 /* Calculator.m in Sources */,
 				CE3856B61D6D206C00570BB2 /* AppDelegate.m in Sources */,
 				CE3856B31D6D206C00570BB2 /* main.m in Sources */,
 			);
@@ -164,14 +168,6 @@
 				CE3856BB1D6D206C00570BB2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CE3856BF1D6D206C00570BB2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE3856C01D6D206C00570BB2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +296,7 @@
 				CE3856C71D6D206C00570BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
