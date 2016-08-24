@@ -112,6 +112,7 @@ typedef enum opr Operator;
     Calc = [[Calculator alloc] init];
     curruntOpr = none;
     curruntValue = 0;
+    self.CalculLabel.text = @"0";
 
     // Do any additional setup after loading the view, typically from a nib.
     // 뷰가 다 만들어지고 나면 호출되는 메소드
