@@ -34,11 +34,7 @@ typedef enum opr Operator;
     int value = (int)myButton.tag;
     //애플이 만들어 놓은 NextStep 정수형
     
-    if(curruntOpr == none){
-        curruntValue = curruntValue * 10 + value;
-    }
-    else
-        curruntValue = value;
+    curruntValue = curruntValue * 10 + value;
     
     self.CalculLabel.text = [NSString stringWithFormat: @"%d", curruntValue]; // NSString 형전환
     
@@ -74,6 +70,7 @@ typedef enum opr Operator;
     }
     
     [Calc setAccumulator:curruntValue];
+    curruntValue = 0;
 }
 
 - (IBAction)clickResult:(id)sender {
@@ -103,8 +100,6 @@ typedef enum opr Operator;
 - (IBAction)unwind:(UIStoryboardSegue *)sender{
     //unwind가 구현된 화면으로 돌아가도록 !!!
 }
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
